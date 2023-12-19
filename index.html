@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="IMC.js"></script>
+</head>
+
+<body>
+
+    <div class="menu" id="menu">
+        <div class="menu-item" onclick="showTip()">Dicas</div>
+        <div class="menu-item" onclick="showProfile()">Perfil</div>
+        <div class="menu-item" onclick="showMore()">Mais</div>
+    </div>
+
+  
+     
+
+            <div class="title1">
+                <h2>Calculadora de IMC:</h2>
+            </div>
+
+              <p>
+                <br>
+              </p>
+          
+                <div class="title2">
+                    <h3>O que é IMC ?</h3>
+                </div>
+                
+         <div class="container">
+          <div class="content">
+              <div class="text">
+                <div class="text2">
+                    <p>
+                        O Índice de Massa Corporal (IMC) é uma medida que relaciona o peso e a altura de uma pessoa para avaliar se ela está dentro de faixas consideradas saudáveis. Ele é frequentemente utilizado como uma ferramenta rápida para identificar possíveis problemas relacionados ao peso.
+                    </p>
+                    <h3>A fórmula básica do IMC é:</h3>
+                    <img class="image" src="IMC.png" alt="formula">
+                    <p>
+                        Onde o peso é medido em quilogramas e a altura em metros. O resultado do cálculo é então comparado com faixas pré-determinadas para categorizar o indivíduo em diferentes classes, como abaixo do peso, peso normal, sobrepeso ou obesidade.
+                    </p>
+                </div>
+              </div>
+
+            <div class="calculator">
+                <label for="weight">Peso (kg): </label>
+                <input type="number" id="weight" step="0.1" placeholder="Insira o peso" required>
+
+                <label for="height">Altura (m): </label>
+                <input type="number" id="height" step="0.01" placeholder="Insira a altura" required>
+
+                <button onclick="calculateIMC()">Calcular IMC</button>
+
+                <div id="result"></div>
+                <div class="life">
+                    <p>
+                        Abaixo de 18,5: Abaixo do peso
+                        <br>18,5 a 24,9: Peso normal
+                        <br>25 a 29,9: Sobrepeso
+                        <br>30 a 34,9: Obesidade grau 1
+                        <br>35 a 39,9: Obesidade grau 2
+                        <br>40 ou mais: Obesidade grau 3 (obesidade mórbida)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <img class="image2" src="d44820d9197dbd38bf5c101302eb8f4e-homem-em-pe-apresentando-personagem.png" alt="">
+    <div class="bola">
+      <p></p>
+    </div>
+     
+    <div class="bola2">
+      <p></p>
+    </div>
+    
+<div class="bola3"></div>
+  <div class="bola4"></div>
+  <div class="bola5"></div>
+  <div class="bola6"></div>
+  <div class="bola7"></div>
+
+</body>
+
+</html>
